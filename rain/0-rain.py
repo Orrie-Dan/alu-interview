@@ -1,14 +1,11 @@
 #!/usr/bin/python3
+"""
+Rainwater trapping problem solution.
+
+This module contains a function to calculate how much rainwater can be trapped
+between walls of different heights after it rains.
+"""
 def rain(walls):
-    """
-    Calculate how many square units of water will be retained after it rains.
-    
-    Args:
-        walls: List of non-negative integers representing wall heights
-        
-    Returns:
-        Integer indicating total amount of rainwater retained
-    """
     if not walls or len(walls) <= 2:
         return 0
     
